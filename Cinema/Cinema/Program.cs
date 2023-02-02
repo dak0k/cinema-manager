@@ -17,18 +17,16 @@ public class Program
             {"[09,01]","[09,02]","[09,03]","[09,04]","[09,05]","[09,06]","[09,07]","[09,08]","[09,09]","[09,10]"},
             {"[10,01]","[10,02]","[10,03]","[10,04]","[10,05]","[10,06]","[10,07]","[10,08]","[10,09]","[10,10]"},
         };
-        int currentY = 0;
-        int currentX = 0;
-        const int PLACE_POSITION_Y = 0;
-        const int PLACE_POSITION_X = 0;
+     
+
         ShowPlaces();
-       
+        Console.ForegroundColor = ConsoleColor.White;
+        Console.WriteLine("\nКоманды:");
+        Console.WriteLine("1: Забронировать места");
+        Console.WriteLine("2: Завершить программу\n");
         while (true)
         {
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("\nКоманды:");
-            Console.WriteLine("1: Забронировать места");
-            Console.WriteLine("2: Завершить программу\n");
             Console.Write("Введите команду: ");
             string inputCommand = Console.ReadLine();
             if (inputCommand == "1")
